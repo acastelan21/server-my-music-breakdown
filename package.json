@@ -1,0 +1,11 @@
+{
+  "name": "server-my-music-breakdown",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Alvaro Castelan",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^6.2.0"
+  }
+}
