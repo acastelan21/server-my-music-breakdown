@@ -5,7 +5,7 @@ var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 
 require("dotenv").config();
-
+const PORT = process.env.PORT || 8888;
 var client_id = process.env.SPOTIFY_CLIENT_ID
 var client_secret = process.env.SPOTIFY_CLIENT_SECRET
 var redirect_uri = process.env.REDIRECT_URI
@@ -137,4 +137,4 @@ app.get('/refresh_token', function(req, res) {
 });
 
 console.log(`🌎 ==> Server now on port ${8888}!`);
-app.listen(8888);
+app.listen(PORT);
